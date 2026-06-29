@@ -26,7 +26,7 @@ export default function Hero() {
   ];
 
   return (
-    <section className="pt-0 md:pt-32 px-0 md:px-8 bg-primary">
+    <section className="w-full bg-primary px-0 md:px-12 pt-0 md:pt-8 font-sans">
       <div ref={containerRef} className="relative h-[100dvh] md:h-[90vh] min-h-[600px] w-full flex flex-col bg-secondary overflow-hidden md:rounded-lg md:shadow-2xl">
         <div className="absolute inset-0 z-0">
           <img
