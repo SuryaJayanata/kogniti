@@ -5,6 +5,8 @@ import Clients from "./sections/Clients";
 import About from "./sections/About";
 import Stats from "./sections/Stats";
 import Services from "./sections/Services";
+import Testimonials from "./sections/Testimonials";
+import FAQ from "./sections/FAQ";
 import Footer from "./components/layout/Footer";
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
           <About />
           <Stats />
           <Services />
+          <Testimonials />
+          <FAQ />
         </main>
         <Footer />
       </div>

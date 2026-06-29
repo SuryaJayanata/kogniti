@@ -26,8 +26,8 @@ export default function Stats() {
   }, []);
 
   return (
-    <section ref={containerRef} className="py-24 px-8 md:px-16 bg-white border-t border-gray-100">
-      <div className="max-w-6xl mx-auto">
+    <section ref={containerRef} className="py-24 px-6 md:px-12 bg-white border-t border-gray-100">
+      <div className="w-full max-w-7xl mx-auto">
         <div className="flex items-center gap-2 mb-12">
           <div className="w-2 h-2 bg-primary rounded-lg" />
           <span className="uppercase tracking-widest text-xs font-semibold text-secondary">

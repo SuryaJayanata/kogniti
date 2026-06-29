@@ -16,24 +16,37 @@ export const NAV_LINKS = [
   { label: "CONTACT", href: "#contact" }
 ];
 
-export const ABOUT_TEXT = "We operate at the intersection of data, psychology, and creative innovation. At Kogniti, we don't just design aesthetics; we architect brands based on deep human behavior. We ensure your campaigns aren't born from chance, but are precision-engineered to be truly remembered.";
+export const ABOUT_TEXT = "We decode human behavior to architect unforgettable brands. Precision-engineered campaigns driven by cognitive insights.";
 
 export const SERVICES_DATA = [
   {
     title: "Data-Driven Strategy",
-    description: "Memanfaatkan big data dan analitik canggih untuk memetakan peluang pasar dan mengoptimalkan setiap langkah kampanye Anda."
+    subServices: ["Market Analysis", "Consumer Profiling", "Trend Forecasting", "Performance Tracking"],
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+    featureTitle: "Growth strategy for FinTech",
+    featureDesc: "Leveraging predictive analytics to optimize customer acquisition, resulting in a 300% ROI increase."
   },
   {
     title: "Consumer Psychology",
-    description: "Menganalisis perilaku dan motivasi audiens untuk menciptakan pesan yang beresonansi kuat secara emosional dan kognitif."
+    subServices: ["Behavioral Research", "Neuromarketing", "Brand Positioning", "User Testing"],
+    image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80",
+    featureTitle: "Rebranding a lifestyle icon",
+    featureDesc: "Deep-diving into emotional triggers to create a brand narrative that deeply resonates with Gen Z."
   },
   {
     title: "Creative Innovation",
-    description: "Menerjemahkan wawasan data ke dalam eksekusi visual dan naratif yang segar, relevan, dan mendobrak batasan konvensional."
+    subServices: ["Visual Identity", "UI/UX Design", "Content Creation", "Immersive Experiences"],
+    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80",
+    featureTitle: "Immersive web experience",
+    featureDesc: "Award-winning digital interface design pushing the boundaries of web GL and modern aesthetics."
   },
   {
     title: "Digital Ecosystems",
-    description: "Membangun arsitektur digital yang terintegrasi (Web, SEO, Sosial, Iklan) untuk konversi yang terukur dan berkelanjutan."
+    subServices: ["Omnichannel Campaigns", "SEO & Content", "Social Media", "Paid Advertising"],
+
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+    featureTitle: "Global e-commerce scale",
+    featureDesc: "Architecting a unified digital presence that streamlined conversions across 15 international markets."
   }
 ];
 
@@ -57,5 +70,43 @@ export const STATS_DATA = [
     number: "15+",
     label: "Industry Awards",
     description: "Recognized for creative excellence and strategic innovation."
+  }
+];
+
+export const TESTIMONIALS_DATA = [
+  {
+    quote: "With Agency the results are very satisfying. wrapped with Hight quality and innovative design that makes a surge of visitors on my website",
+    author: "Renee Wells",
+    role: "Product Designer, Quotient",
+    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80"
+  },
+  {
+    quote: "Their data-driven approach combined with raw creative talent resulted in a 400% increase in our conversion rates within just three months.",
+    author: "David Chen",
+    role: "Founder, Zenith",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80"
+  }
+];
+
+export const FAQ_DATA = [
+  {
+    question: "What makes Kogniti different from other marketing agencies?",
+    answer: "We don't rely on guesswork. Every strategy is built on a foundation of behavioral data and cognitive psychology, ensuring your message resonates on a deeper, subconscious level."
+  },
+  {
+    question: "Do you work with startups or only established enterprises?",
+    answer: "We partner with ambitious brands at all stages. Whether you're a funded startup looking to disrupt or an enterprise aiming to scale, our strategies are tailored to your growth phase."
+  },
+  {
+    question: "How long does it typically take to see tangible results?",
+    answer: "While brand building is a long-term play, our data-driven performance campaigns typically start showing measurable ROI within the first 30 to 45 days of launch."
+  },
+  {
+    question: "Do you offer custom pricing packages?",
+    answer: "Absolutely. Every brand's challenge is unique. We tailor our pricing and service packages based on the specific scope of work, timeline, and resources required to hit your aggressive growth goals."
+  },
+  {
+    question: "Who will be working directly on my account?",
+    answer: "You will be assigned a dedicated, cross-functional team of senior strategists, creative directors, and data analysts. We never bait-and-switch; the experts you meet on day one are the ones executing your vision."
   }
 ];

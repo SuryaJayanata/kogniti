@@ -45,7 +45,7 @@ export default function About() {
 
   return (
     <section id="about" ref={containerRef} className="py-24 md:py-32 px-6 md:px-12 bg-white text-secondary rounded-t-lg -mt-8 relative z-20">
-      <div className="max-w-7xl mx-auto">
+      <div className="w-full max-w-7xl mx-auto">
         
         <div className="flex justify-between items-end mb-16 md:mb-24">
           <div className="flex items-center gap-2">
