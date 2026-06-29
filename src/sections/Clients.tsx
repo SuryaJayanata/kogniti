@@ -2,15 +2,15 @@ import { CLIENT_BRANDS } from "../constants/data";
 
 export default function Clients() {
   return (
-    <section className="py-12 bg-white border-b border-gray-100 flex items-center overflow-hidden">
-      <div className="w-64 shrink-0 px-8 flex items-center gap-2 border-r border-gray-100 hidden md:flex">
-        <div className="w-5 h-5 text-secondary">
+    <section className="py-12 px-8 md:px-16 bg-primary border-b border-secondary/10 flex items-center overflow-hidden">
+      <div className="w-64 shrink-0 pr-8 flex items-center gap-2 border-r border-secondary/10 hidden md:flex">
+        <div className="w-5 h-5 text-accent1">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <circle cx="12" cy="12" r="10" />
             <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07L19.07 4.93" />
           </svg>
         </div>
-        <span className="text-xs font-semibold uppercase tracking-wider text-gray-500 w-48 text-balance">
+        <span className="text-xs font-semibold uppercase tracking-wider text-secondary/50 w-48 text-balance">
           Trusted by 500+ global brands.
         </span>
       </div>

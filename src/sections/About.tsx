@@ -44,13 +44,13 @@ export default function About() {
   }, []);
 
   return (
-    <section id="about" ref={containerRef} className="py-24 md:py-32 px-6 md:px-12 bg-white text-secondary rounded-t-lg -mt-8 relative z-20">
+    <section id="about" ref={containerRef} className="py-24 md:py-32 px-6 md:px-12 bg-primary text-secondary rounded-t-lg -mt-8 relative z-20">
       <div className="w-full max-w-7xl mx-auto">
         
         <div className="flex justify-between items-end mb-16 md:mb-24">
           <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-primary rounded-lg" />
-            <span className="uppercase tracking-widest text-xs font-bold text-gray-500">
+            <div className="w-2 h-2 bg-accent1 rounded-lg" />
+            <span className="uppercase tracking-widest text-xs font-bold text-secondary/50">
               Who We Are
             </span>
           </div>
@@ -62,7 +62,7 @@ export default function About() {
             className="text-3xl md:text-5xl lg:text-[4rem] font-medium leading-[1.2] tracking-tight max-w-6xl text-balance flex flex-wrap gap-x-3 md:gap-x-5 gap-y-2 md:gap-y-4"
           >
             {words.map((word, i) => (
-              <span key={i} className="lyric-word text-accent1 transition-colors duration-100">
+              <span key={i} className="lyric-word text-secondary/20 transition-colors duration-100">
                 {word}
               </span>
             ))}
@@ -78,10 +78,9 @@ export default function About() {
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" 
             />
             
-            <div className="absolute top-1/2 left-0 right-0 h-px bg-white/40 z-10 pointer-events-none hidden md:block" />
 
-            <div className="absolute bottom-6 right-6 bg-white rounded-lg p-3 md:p-5 shadow-2xl flex items-center gap-3 z-20">
-              <div className="w-8 h-8 md:w-10 md:h-10 bg-secondary rounded-lg flex items-center justify-center text-white shrink-0">
+            <div className="absolute bottom-6 right-6 bg-primary rounded-lg p-3 md:p-5 shadow-2xl flex items-center gap-3 z-20">
+              <div className="w-8 h-8 md:w-10 md:h-10 bg-secondary rounded-lg flex items-center justify-center text-primary shrink-0">
                 <Command className="w-4 h-4 md:w-5 md:h-5" strokeWidth={2.5} />
               </div>
               <div className="flex flex-col pr-2">
@@ -91,9 +90,9 @@ export default function About() {
             </div>
           </div>
 
-          <div className="md:col-span-5 w-full h-full rounded-lg bg-secondary text-white p-8 md:p-10 flex flex-col justify-between">
+          <div className="md:col-span-5 w-full h-full rounded-lg bg-secondary text-primary p-8 md:p-10 flex flex-col justify-between">
             <div>
-              <span className="uppercase tracking-widest text-[10px] text-white/50 font-bold mb-4 block">
+              <span className="uppercase tracking-widest text-[10px] text-primary/50 font-bold mb-4 block">
                 Our Approach
               </span>
               <h3 className="text-2xl md:text-3xl lg:text-4xl font-medium leading-[1.15] text-balance">
@@ -101,14 +100,14 @@ export default function About() {
               </h3>
             </div>
             
-            <div className="pt-8 border-t border-white/10 mt-8 md:mt-12">
-              <p className="text-white/70 text-sm md:text-sm leading-relaxed mb-8">
+            <div className="pt-8 border-t border-primary/10 mt-8 md:mt-12">
+              <p className="text-primary/70 text-sm md:text-sm leading-relaxed mb-8">
                 We help you achieve your vision and scale with confidence through precision targeting and creative excellence across your digital journey.
               </p>
-              <button className="flex items-center gap-3 bg-primary hover:bg-primary/90 text-white rounded-lg pl-6 pr-1.5 py-1.5 transition-all duration-300 w-max group">
+              <button className="flex items-center gap-3 bg-accent1 hover:bg-accent1/90 text-primary rounded-lg pl-6 pr-1.5 py-1.5 transition-all duration-300 w-max group">
                 <span className="text-sm font-semibold">Start a Project</span>
-                <div className="w-8 h-8 rounded-lg bg-white text-primary flex items-center justify-center group-hover:scale-95 transition-transform">
-                  <ArrowUpRight className="w-4 h-4" />
+                <div className="w-8 h-8 rounded-lg bg-primary text-accent1 flex items-center justify-center group-hover:scale-95 transition-transform">
+                  <ArrowUpRight className="w-4 h-4 group-hover:rotate-45 transition-transform duration-300" />
                 </div>
               </button>
             </div>
@@ -116,9 +115,9 @@ export default function About() {
 
         </div>
 
-        <a href="#about-more" className="group flex md:hidden items-center justify-between w-full mt-12 text-sm font-bold uppercase tracking-wider border-b border-secondary pb-4 hover:text-primary transition-colors">
+        <a href="#about-more" className="group flex md:hidden items-center justify-between w-full mt-12 text-sm font-bold uppercase tracking-wider border-b border-secondary pb-4 hover:text-accent1 transition-colors">
           <span>About The Agency</span>
-          <ArrowUpRight className="w-5 h-5" />
+          <ArrowUpRight className="w-5 h-5 group-hover:rotate-45 transition-transform duration-300" />
         </a>
 
       </div>

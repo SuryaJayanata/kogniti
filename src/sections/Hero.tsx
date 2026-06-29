@@ -1,5 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ArrowUpRight } from "lucide-react";
 
 export default function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -24,15 +26,15 @@ export default function Hero() {
   ];
 
   return (
-    <section className="w-full bg-[#FAFAFA] px-6 md:px-12 pt-6 md:pt-8 font-sans">
-      <div ref={containerRef} className="relative h-[85vh] md:h-[90vh] min-h-[600px] w-full flex flex-col bg-[#0a0a0a] overflow-hidden rounded-lg shadow-2xl">
+    <section className="pt-0 md:pt-32 px-0 md:px-8 bg-primary">
+      <div ref={containerRef} className="relative h-[100dvh] md:h-[90vh] min-h-[600px] w-full flex flex-col bg-secondary overflow-hidden md:rounded-lg md:shadow-2xl">
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=3000&auto=format&fit=crop" 
             alt="Marketing Team Hero"
             className="w-full h-full object-cover opacity-50"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-black/10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-secondary/30 to-secondary/10" />
         </div>
 
         <div className="relative z-10 flex flex-col justify-end w-full h-full px-6 pb-10 md:px-12 md:pb-12">
@@ -41,11 +43,11 @@ export default function Hero() {
             
             <div className="flex flex-col items-start gap-4 lg:gap-5 max-w-3xl lg:w-2/3">
               
-              <div className="hero-elem flex items-center gap-2 bg-[#000000] rounded-lg px-3 py-1.5 w-max border border-white/5">
-                <svg className="w-3.5 h-3.5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <div className="hero-elem flex items-center gap-2 bg-secondary rounded-lg px-3 py-1.5 w-max border border-primary/10 shadow-md">
+                <svg className="w-3.5 h-3.5 text-accent1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <span className="text-white/80 text-[11px] md:text-xs font-medium tracking-wide">
+                <span className="text-primary/80 text-[11px] md:text-xs font-medium tracking-wide">
                   Data-Driven Marketing
                 </span>
               </div>
@@ -56,15 +58,15 @@ export default function Hero() {
                     <img 
                       key={i} 
                       src={src} 
-                      className="w-7 h-7 rounded-full border border-black/50 object-cover relative shadow-sm" 
+                      className="w-7 h-7 rounded-full border border-secondary/50 object-cover relative shadow-sm" 
                       style={{ zIndex: 10 - i }} 
                       alt="Client avatar"
                     />
                   ))}
                 </div>
                 <div className="flex flex-col justify-center gap-0.5">
-                  <span className="text-white/80 text-[11px] leading-none">Trusted by 500+ growing brands</span>
-                  <div className="flex items-center gap-1 text-[10px] text-white/60">
+                  <span className="text-primary/80 text-[11px] leading-none">Trusted by 500+ growing brands</span>
+                  <div className="flex items-center gap-1 text-[10px] text-primary/60">
                     <svg className="w-3 h-3 text-[#FBBF24] fill-[#FBBF24]" viewBox="0 0 24 24">
                       <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                     </svg>
@@ -73,7 +75,7 @@ export default function Hero() {
                 </div>
               </div>
 
-              <h1 className="hero-elem text-[2.5rem] md:text-[3.5rem] lg:text-[4rem] leading-[1.05] font-normal text-white tracking-tight mt-1 max-w-[90%] md:max-w-full">
+              <h1 className="hero-elem text-[2.5rem] md:text-[3.5rem] lg:text-[4rem] leading-[1.05] font-normal text-primary tracking-tight mt-1 max-w-[90%] md:max-w-full">
                 Next-Gen Marketing Agency<br />
                 for Growing Brands
               </h1>
@@ -81,7 +83,7 @@ export default function Hero() {
 
             <div className="hero-elem flex flex-col items-start lg:items-end w-full lg:w-1/3 mb-1">
               
-              <div className="bg-primary text-white p-4 md:p-5 rounded-lg w-full max-w-[280px] flex flex-col gap-6 shadow-2xl transition-transform hover:scale-[1.02] cursor-pointer">
+              <div className="bg-accent1 text-primary p-4 md:p-5 rounded-lg w-full max-w-[280px] flex flex-col gap-6 shadow-2xl transition-transform hover:scale-[1.02] cursor-pointer group">
                 <div className="flex justify-between items-start">
                   <svg className="w-5 h-5 opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                     <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
@@ -91,18 +93,16 @@ export default function Hero() {
                 
                 <div className="flex justify-between items-end w-full">
                   <div className="flex flex-col gap-0.5">
-                    <span className="text-[11px] font-medium opacity-90 leading-none text-white/90">Strategy session</span>
-                    <span className="text-[15px] font-bold tracking-tight leading-none">Book your call</span>
+                    <span className="text-[11px] font-medium opacity-90 leading-none text-primary/90">Strategy session</span>
+                    <span className="text-[15px] font-bold tracking-tight leading-none">Start a project</span>
                   </div>
-                  <div className="bg-white text-primary p-2 rounded-lg shadow-sm">
-                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M12 5l7 7-7 7" />
-                    </svg>
+                  <div className="bg-primary text-accent1 p-2 rounded-lg shadow-sm">
+                    <ArrowUpRight className="w-4 h-4 group-hover:rotate-45 transition-transform duration-300" />
                   </div>
                 </div>
               </div>
 
-              <span className="text-white/40 text-[9px] mt-2 lg:mr-2 text-left lg:text-right w-full max-w-[280px] font-medium tracking-wide uppercase">
+              <span className="text-primary/40 text-[9px] mt-2 lg:mr-2 text-left lg:text-right w-full max-w-[280px] font-medium tracking-wide uppercase">
                 No pressure. Just modern strategies.
               </span>
 

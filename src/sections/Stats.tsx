@@ -26,10 +26,10 @@ export default function Stats() {
   }, []);
 
   return (
-    <section ref={containerRef} className="py-24 px-6 md:px-12 bg-white border-t border-gray-100">
+    <section ref={containerRef} className="py-24 px-6 md:px-12 bg-primary border-t border-secondary/10">
       <div className="w-full max-w-7xl mx-auto">
         <div className="flex items-center gap-2 mb-12">
-          <div className="w-2 h-2 bg-primary rounded-lg" />
+          <div className="w-2 h-2 bg-accent1 rounded-lg" />
           <span className="uppercase tracking-widest text-xs font-semibold text-secondary">
             By The Numbers
           </span>
@@ -41,11 +41,11 @@ export default function Stats() {
               <span className="text-6xl md:text-7xl font-light text-secondary tracking-tighter mb-4">
                 {stat.number}
               </span>
-              <div className="h-px w-full bg-gray-200 mb-4 border-t border-dashed border-gray-300" />
+              <div className="h-px w-full bg-secondary/10 mb-4 border-t border-dashed border-secondary/20" />
               <span className="text-sm font-semibold text-secondary mb-2 uppercase tracking-wide">
                 {stat.label}
               </span>
-              <p className="text-sm text-gray-500 leading-relaxed text-balance">
+              <p className="text-sm text-secondary/60 leading-relaxed text-balance">
                 {stat.description}
               </p>
             </div>

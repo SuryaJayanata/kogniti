@@ -10,10 +10,11 @@ export const CLIENT_BRANDS = [
 ];
 
 export const NAV_LINKS = [
+  { label: "HOME", href: "#" },
+  { label: "ABOUT", href: "#about" },
   { label: "SERVICES", href: "#services" },
-  { label: "INDUSTRIES", href: "#industries" },
-  { label: "CASE STUDIES", href: "#cases" },
-  { label: "CONTACT", href: "#contact" }
+  { label: "TESTIMONIALS", href: "#testimonials" },
+  { label: "FAQ", href: "#faq" }
 ];
 
 export const ABOUT_TEXT = "We decode human behavior to architect unforgettable brands. Precision-engineered campaigns driven by cognitive insights.";

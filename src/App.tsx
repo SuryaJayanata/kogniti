@@ -7,12 +7,13 @@ import Stats from "./sections/Stats";
 import Services from "./sections/Services";
 import Testimonials from "./sections/Testimonials";
 import FAQ from "./sections/FAQ";
+import CTA from "./sections/CTA";
 import Footer from "./components/layout/Footer";
 
 function App() {
   return (
     <SmoothScroller>
-      <div className="font-sans antialiased text-secondary bg-background selection:bg-primary selection:text-white">
+      <div className="font-sans antialiased text-secondary bg-primary selection:bg-accent1 selection:text-primary">
         <Navbar />
         <main>
           <Hero />
@@ -22,6 +23,7 @@ function App() {
           <Services />
           <Testimonials />
           <FAQ />
+          <CTA />
         </main>
         <Footer />
       </div>
