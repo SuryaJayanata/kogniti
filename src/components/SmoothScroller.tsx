@@ -12,7 +12,16 @@ function AnchorHandler() {
       if (anchor && anchor.getAttribute('href')?.startsWith('#')) {
         e.preventDefault();
         const hash = anchor.getAttribute('href');
+        
+        if (hash === '#start') {
+          window.location.hash = hash;
+          return;
+        }
+
         if (hash === '#') {
+           if (window.location.hash === '#start') {
+             window.location.hash = '';
+           }
            lenis.scrollTo(0, { duration: 1.2 });
         } else if (hash) {
            lenis.scrollTo(hash, { duration: 1.2, offset: -50 });

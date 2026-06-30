@@ -23,7 +23,7 @@ export const SERVICES_DATA = [
   {
     title: "Data-Driven Strategy",
     subServices: ["Market Analysis", "Consumer Profiling", "Trend Forecasting", "Performance Tracking"],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1543286386-713bdd548da4?w=800&q=80",
     featureTitle: "Growth strategy for FinTech",
     featureDesc: "Leveraging predictive analytics to optimize customer acquisition, resulting in a 300% ROI increase."
   },
