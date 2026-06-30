@@ -12,8 +12,19 @@ import CTA from "./sections/CTA";
 import Footer from "./components/layout/Footer";
 import StartProject from "./pages/StartProject";
 
+import Intro from "./components/Intro";
+
 function App() {
   const [currentHash, setCurrentHash] = useState(window.location.hash);
+  const [isIntroComplete, setIsIntroComplete] = useState(false);
+
+  useEffect(() => {
+    if (!isIntroComplete) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  }, [isIntroComplete]);
 
   useEffect(() => {
     const handleHashChange = () => {
@@ -27,6 +38,7 @@ function App() {
 
   return (
     <SmoothScroller>
+      {!isIntroComplete && <Intro onComplete={() => setIsIntroComplete(true)} />}
       <div className="font-sans antialiased text-secondary bg-primary selection:bg-accent1 selection:text-primary">
         <Navbar />
         {currentHash === "#start" ? (
